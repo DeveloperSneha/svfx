@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/layouts/partials/script.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/admin/statewise.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/admin/login.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/admin/dashboard.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/admin/candidates.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/routes/web.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/admin/suggest.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/app/CandidateRecommandation.php</file>
+            <file>file:/D:/wamp64/www/pledge1/public/dist/css/style.css</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/admin/enrolled.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/app/CandidateEnrollment.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/candidate/login.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/app/Http/Controllers/AdminController.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/admin/districtwise.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/app/Http/Controllers/Auth/CandidateRegisterController.php</file>
+            <file>file:/D:/wamp64/www/pledge1/app/CandidateSuggestion.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/layouts/main.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/app/Http/Controllers/Auth/AdminLoginController.php</file>
+            <file>file:/D:/wamp64/www/pledge1/app/helpers.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/admin/recommend.blade.php</file>
+            <file>file:/D:/wamp64/www/pledge1/resources/views/admin/nav.blade.php</file>
+        </group>
+    </open-files>
+</project-private>

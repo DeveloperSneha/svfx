@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js " lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+        <meta name="description" content="Responsive Bootstrap 4 and web Application ui kit.">
+
+        <title>:: SimarVFX :: Sign Up</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" href="{{asset('img/svfx.jpg')}}"/>
+        <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+        <!-- Custom Css -->
+        <link rel="stylesheet" href="{{asset('plugins/bootstrap/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('dist/css/main.css')}}">
+        <link rel="stylesheet" href="{{asset('dist/css/authentication.css')}}">
+        <link rel="stylesheet" href="{{asset('dist/css/color_skins.css')}}">
+    </head>
+
+    <body class="theme-purple authentication sidebar-collapse">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
+            <div class="container">        
+                <div class="navbar-translate n_logo">
+                    <a class="navbar-brand" href="javascript:void(0);" title="" target="_blank">School MIS</a>
+                    <button class="navbar-toggler" type="button">
+                        <span class="navbar-toggler-bar bar1"></span>
+                        <span class="navbar-toggler-bar bar2"></span>
+                        <span class="navbar-toggler-bar bar3"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0);">Search Result</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" title="Follow us on Twitter" href="javascript:void(0);" target="_blank">
+                                <i class="zmdi zmdi-twitter"></i>
+                                <p class="d-lg-none d-xl-none">Twitter</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" title="Like us on Facebook" href="javascript:void(0);" target="_blank">
+                                <i class="zmdi zmdi-facebook"></i>
+                                <p class="d-lg-none d-xl-none">Facebook</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" title="Follow us on Instagram" href="javascript:void(0);" target="_blank">                        
+                                <i class="zmdi zmdi-instagram"></i>
+                                <p class="d-lg-none d-xl-none">Instagram</p>
+                            </a>
+                        </li>  -->               
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-white btn-round" href="{{url('/login')}}">SIGN IN</a>
+                        </li>
+                        </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="page-header">
+            <div class="page-header-image" style="background-image:url(dist/images/login.jpg)"></div>
+                <div class="container">
+                    <div class="col-md-12 content-center">
+                        <div class="card-plain">
+                            <form method="POST" action="{{ route('register') }}"class="form">
+                                 {{ csrf_field() }}
+
+                                <div class="header">
+                                    <div class="logo-container">
+                                                                                <!--<img src="https://thememakker.com/templates/oreo/html/assets/images/logo.svg" alt="">-->
+                                    </div>
+                                    <h5>Sign Up</h5>
+                                    <!--<span>Register Here</span>-->
+                                </div>
+                                <div class="content">                                                
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="name" placeholder="Enter Name" required>
+                                        <span class="input-group-addon">
+                                            <i class="zmdi zmdi-account-circle"></i>
+                                        </span>
+                                    </div>
+                                    @if ($errors->has('name'))
+                                    <label id="minmaxlength-error" class="error" for="minmaxlength">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </label>
+                                    @endif
+                                    <div class="input-group">
+                                        <input type="email" name = "email" class="form-control" placeholder="Enter Email" required>
+                                        <span class="input-group-addon">
+                                            <i class="zmdi zmdi-email"></i>
+                                        </span>
+                                    </div>
+                                    @if ($errors->has('email'))
+                                    <label id="minmaxlength-error" class="error" for="minmaxlength">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </label>
+                                    @endif
+                                    <div class="input-group">
+                                        <input type="password" placeholder="Password" name = "password" class="form-control" required />
+                                        <span class="input-group-addon">
+                                            <i class="zmdi zmdi-lock"></i>
+                                        </span>
+
+                                    </div> 
+                                    @if ($errors->has('password'))
+                                    <label id="minmaxlength-error" class="error" for="minmaxlength">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </label>
+
+                                    @endif
+                                    <div class="input-group">
+                                        <input type="password" id="password-confirm" name="password_confirmation" required placeholder="Confirm Password" class="form-control" />
+                                        <span class="input-group-addon">
+                                            <i class="zmdi zmdi-lock"></i>
+                                        </span>
+
+                                    </div> 
+                                </div>
+                                <!--                    <div class="checkbox">
+                                                            <input id="terms" type="checkbox">
+                                                            <label for="terms">
+                                                                    I read and agree to the <a href="javascript:void(0);">terms of usage</a>
+                                                            </label>
+                                                        </div>-->
+                                <div class="footer text-center">
+                                    <input type="submit" class="btn btn-primary btn-round btn-lg btn-block waves-effect waves-light" value="SIGN UP">                       
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+            <footer class="footer">
+                <div class="container">
+                    <!-- <nav>
+                        <ul>
+                            <li><a href="http://thememakker.com/contact/" target="_blank">Contact Us</a></li>
+                            <li><a href="http://thememakker.com/about/" target="_blank">About Us</a></li>
+                            <li><a href="javascript:void(0);">FAQ</a></li>
+                        </ul>
+                    </nav> -->
+                    <div class="copyright">
+                        &copy;
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>,
+                        <span>Designed by <a href="#" target="_blank">Pessford</a></span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Jquery Core Js -->
+
+        <!-- Jquery Core Js -->
+        <script src="{{asset('dist/bundles/libscripts.bundle.js')}}"></script>
+        <script src="{{asset('dist/bundles/vendorscripts.bundle.js')}}"></script> <!-- Lib Scripts Plugin Js -->
+        <script>
+                            $(".navbar-toggler").on('click', function () {
+                                $("html").toggleClass("nav-open");
+                            });
+        </script>
+    </body>
+
+    <!-- Mirrored from thememakker.com/templates/oreo/html/light/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 05 Jan 2019 07:36:00 GMT -->
+</html>

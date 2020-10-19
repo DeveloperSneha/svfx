@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="193.1451" y1="178.8032" x2="193.1451" y2="112.827">
+	<stop  offset="0" style="stop-color:#6F4118"/>
+	<stop  offset="0.5" style="stop-color:#E6B45C"/>
+	<stop  offset="1" style="stop-color:#6F4118"/>
+</linearGradient>
+<polygon class="st0" points="196.7,112.8 189.9,119.7 210.9,140.7 157.2,140.6 157.2,150.5 210.2,150.4 188.7,171.9 195.5,178.8 
+	229.1,145.2 "/>
+<path class="st1" d="M115.2,113.4l-6.9-6.9L141.9,73l33.7,33.7l-6.9,6.9l-26.9-26.9L115.2,113.4z M109.1,119.6l-25.7,25.7l26.9,26.9
+	l-6.9,6.9l-33.7-33.7l32.5-32.5L109.1,119.6z M167.6,178l6.9,6.9l-32.5,32.5L109.5,185l6.9-6.9l25.5,25.5L167.6,178z"/>
+</svg>
